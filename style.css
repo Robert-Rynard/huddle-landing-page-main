@@ -82,14 +82,16 @@ footer > *:hover {
   body {
     background-image: url(./images/bg-desktop.svg);
     background-size: cover;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: minmax(18rem, 1fr) minmax(auto, max-content);
     grid-template-rows: min-content 1fr min-content;
     padding: 3rem 5rem;
+    column-gap: 4rem;
+    max-width: 100rem;
+    margin: 0 auto;
   }
 
   .background-img {
     grid-row: 2;
-    max-width: 40rem;
   }
 
   main {
